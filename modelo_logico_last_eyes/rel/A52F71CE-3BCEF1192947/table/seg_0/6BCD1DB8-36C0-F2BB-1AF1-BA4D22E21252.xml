@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6BCD1DB8-36C0-F2BB-1AF1-BA4D22E21252" name="TB_LST_RECOMENDACAO">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>801FC771-A65A-4811-6050-70658DA2D5D6</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_recomendacao" id="CA7FACB0-CABE-2662-581A-1B51CD132FE8">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>D4273760-7DA3-3F4E-DDF8-204CB1A55FE2</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nivel_humor_alvo" id="F6CDD853-018B-7D3A-5CD9-5640DC1400B7">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>D30B3617-8A88-40CD-C82C-18B83E6BBAD9</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="titulo_recomendacao" id="0FA34982-5795-2D72-6BBC-36184F46C256">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>1FC0FCB6-7514-8405-5B4E-BB3C44A31687</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao_recomendacao" id="CC6C233D-5D2F-9B0C-0056-2AFCB992E90B">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>5BC45F6A-E445-B067-907B-44EA233BC67A</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>350</dataTypeSize>
+<ownDataTypeParameters>350,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_acao" id="3FB7FB65-AE44-29FD-D315-04C1503EFCBF">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>1EB85F0D-8EC7-7B59-B3B8-F7C3BA68D4AE</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="link_acao" id="C7CEBAE8-5533-45F6-F740-EA9F04CEF6CC">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>A169DD71-D87D-431A-9C92-BE569DF60047</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="895FE177-691C-277E-C4DF-E3FCB6979EBB" name="id_recomendacao_pk">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>AC5CAEFC-B27A-8820-8EF6-AFDDA35B53FE</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA7FACB0-CABE-2662-581A-1B51CD132FE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

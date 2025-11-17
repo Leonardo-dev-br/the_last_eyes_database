@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB89899A-9CBC-D0E8-4C5D-A2AE5B2361D9" name="TB_LST_HUMOR">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>79CC17EB-9EA5-A5A6-FB90-F630607DCD38</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_humor" id="35E97D9A-F2B4-6B7C-5F27-094429685FBE">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>B0E12533-6013-A6E0-A2D2-96B5D1D362FA</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_registro" id="F4D81934-DA3E-920A-1273-7DD84BACDFB7">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>9F90ED6D-DD8E-95E6-E042-FA74459C762A</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emocao_palavra_chave" id="E6EB4FFB-3D1E-56D0-EF7B-ACCECE84F7DB">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>D0979195-59B6-ABBC-C596-A08073D84B72</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nivel_humor" id="F030B9E0-FE29-FF1F-4592-A275D3CADE8C">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>E779948B-3E51-92D3-F873-682EC5BC31DA</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cometario" id="FBC5C81B-9B13-DDEA-90AB-6580D0C63A71">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>EE1C747D-ED55-FCC7-BCF8-7E2A4927CC66</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>350</dataTypeSize>
+<ownDataTypeParameters>350,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B74D980-70E0-225C-8820-E451D072E6F6" name="id_humor_pk">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>8581336E-2E53-B7AA-D20D-ED05D7F917AB</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35E97D9A-F2B4-6B7C-5F27-094429685FBE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

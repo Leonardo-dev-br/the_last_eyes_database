@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="id_humor_usuario_fk" directorySegmentName="seg_0" id="B365FA56-F303-DD83-7B94-8B62E35C8EBA">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 14:05:38 UTC</createdTime>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<engineerTo>
+<item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
+</engineerTo>
+<sourcePk>8581336E-2E53-B7AA-D20D-ED05D7F917AB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>79CC17EB-9EA5-A5A6-FB90-F630607DCD38</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C5E82B33-051D-EA79-73C1-F121159ACDBA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

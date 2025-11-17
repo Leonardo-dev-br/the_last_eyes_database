@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="18EF5FD9-618E-C77F-A5EF-7A2CFC47A422" containerWithKeyObject="C0797B50-07CD-5D0B-B4BB-CCD235B4DF0F" localFKIndex="8B6A2252-FB96-EF95-22EA-C411485F7234" name="id_humor_fk">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>B365FA56-F303-DD83-7B94-8B62E35C8EBA</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<referredTableLongName>TB_LST_HUMOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CB89899A-9CBC-D0E8-4C5D-A2AE5B2361D9</referredTableID>
+<keyObject>2B74D980-70E0-225C-8820-E451D072E6F6</keyObject>
+<referredKeyID>2B74D980-70E0-225C-8820-E451D072E6F6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_humor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

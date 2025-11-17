@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="id_retorno_usuario" directorySegmentName="seg_0" id="F7A937E1-CB69-436D-7849-F753A1144E3E">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:38:29 UTC</createdTime>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<engineerTo>
+<item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
+</engineerTo>
+<sourcePk>465D1831-3E39-C061-4AA9-C572B89AD200</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FFFA9A1D-1661-DEE3-1AC7-0C30E5898E81</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>C5E82B33-051D-EA79-73C1-F121159ACDBA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="id_recomendacao_usuario_fk" directorySegmentName="seg_0" id="89FB8FE6-A48A-B3C8-CF23-6AEE0E96C722">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:37:46 UTC</createdTime>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<engineerTo>
+<item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
+</engineerTo>
+<sourcePk>AC5CAEFC-B27A-8820-8EF6-AFDDA35B53FE</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>801FC771-A65A-4811-6050-70658DA2D5D6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C5E82B33-051D-EA79-73C1-F121159ACDBA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

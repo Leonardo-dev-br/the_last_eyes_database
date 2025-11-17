@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0985F3C4-95EB-B7CF-C107-B00D13CC2C91" containerWithKeyObject="C0797B50-07CD-5D0B-B4BB-CCD235B4DF0F" localFKIndex="1E651F2A-5878-A802-59DC-E6E6FA5C83C6" name="id_recomendacao_fk">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>89FB8FE6-A48A-B3C8-CF23-6AEE0E96C722</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<referredTableLongName>TB_LST_RECOMENDACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6BCD1DB8-36C0-F2BB-1AF1-BA4D22E21252</referredTableID>
+<keyObject>895FE177-691C-277E-C4DF-E3FCB6979EBB</keyObject>
+<referredKeyID>895FE177-691C-277E-C4DF-E3FCB6979EBB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_recomendacao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

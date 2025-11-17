@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C39C9DD3-633A-6341-06AF-D7B9FA9FD3F6" name="TB_LST_EMPREGO">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>4EB6D3DD-6E6F-7F29-258B-95C79D1AC7F4</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_emprego" id="738B236A-9C2B-95C1-3BB6-4AE47089FD69">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>B5AF10A4-3622-21DA-6924-66461E04EBCF</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="empresa" id="7ACA5E6A-8E29-FC1C-BDF2-DC5CB8F1DCB5">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>3D8F60E5-EFF8-0466-9F07-2F8F7EA60955</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_admissao" id="6AB1A198-5C96-6756-B09A-A088F447B3FB">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>B7311EFB-387F-8FF9-9297-614F6973ED1C</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cargo" id="66E27E08-C877-E23E-C9D7-1A88356315E0">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>EA7C51C8-6A01-F328-325F-8F4CFDA1A241</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_contrato" id="0529DCF6-D1C5-A0E2-263B-CE5A53BC491D">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>A923ABEF-298F-76A9-F7E3-BFA4982A3B28</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="carga_horaria_semanal" id="7BCED9BB-DB4D-5FB3-BE58-92795CFEA374">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>2DF687C0-1A0F-BF25-FD9F-47F1C9DF5A7F</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modelo_trabalho" id="16E63D9C-A615-28FF-3618-65743A0159E1">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>5352E30C-5553-4228-8A07-BCE905BAD4A4</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="satisfacao_trabalho" id="46345874-6501-033D-6F39-A291339A68A5">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>98BC06AC-B808-401C-43BA-AE936CBE4FEA</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F7170FE-B4B1-7DB8-2B27-30B0F8505216" name="id_emprego_pk">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>AB9BC980-DE0E-F6E5-5B04-46B912C2E9CE</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="738B236A-9C2B-95C1-3BB6-4AE47089FD69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

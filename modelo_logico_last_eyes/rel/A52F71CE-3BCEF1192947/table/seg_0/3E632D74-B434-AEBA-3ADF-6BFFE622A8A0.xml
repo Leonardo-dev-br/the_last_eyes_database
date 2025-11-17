@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E632D74-B434-AEBA-3ADF-6BFFE622A8A0" name="TB_LST_ESTADO_RETORNO">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>FFFA9A1D-1661-DEE3-1AC7-0C30E5898E81</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_retorno" id="1646E81D-4776-2388-2079-9408F341FA19">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>C8E3AC00-C2EC-1702-C40C-67035F8E102E</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_retorno" id="FDDC0C52-D762-97F2-5920-57F27C8CA2FB">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>6C4927DE-BE93-4686-FCCE-8F15F9AF9111</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eficacia_percebida" id="ECBB77F5-C3BF-7078-2301-B2047E3A866A">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>1F5D1714-B66F-4FA2-809E-E5549717C641</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comentario" id="30670C21-F4D3-548E-A9C9-77A580B2497B">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>413A4F6A-30BD-1F19-F504-3FCA0DCA85E0</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>350</dataTypeSize>
+<ownDataTypeParameters>350,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="acao_realizada" id="CC399D5C-BC85-F9C7-4BC7-9F2308001EE8">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>1285FF93-C036-7AAD-945F-149FC0119EC8</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="53FBA487-0333-0E75-5A1C-0FF458F467F3" name="id_retorno_pk">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>465D1831-3E39-C061-4AA9-C572B89AD200</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1646E81D-4776-2388-2079-9408F341FA19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

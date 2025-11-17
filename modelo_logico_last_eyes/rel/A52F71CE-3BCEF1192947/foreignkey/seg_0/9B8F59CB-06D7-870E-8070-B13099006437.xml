@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9B8F59CB-06D7-870E-8070-B13099006437" containerWithKeyObject="C0797B50-07CD-5D0B-B4BB-CCD235B4DF0F" localFKIndex="92125D43-59A1-C3CA-F01E-3EA96E64B0E4" name="id_perfil_fk">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:40:00 UTC</createdTime>
+<generatorID>082C1CF2-0BE4-4E64-BBD5-72E2BA98741C</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<referredTableLongName>TB_LST_PERFIL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>04CEF509-61C5-8D1E-4CFC-55604F19B4B1</referredTableID>
+<keyObject>F9FCA287-695C-5676-9E62-D34CC6523F3A</keyObject>
+<referredKeyID>F9FCA287-695C-5676-9E62-D34CC6523F3A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_perfil</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

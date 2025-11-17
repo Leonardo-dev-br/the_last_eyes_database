@@ -118,6 +118,76 @@
 <dataTypeSize>28</dataTypeSize>
 <ownDataTypeParameters>28,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_perfil" id="24E64C32-635F-F1D4-8FC3-2AE54CED0D0D">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 14:02:37 UTC</createdTime>
+<generatorID>082C1CF2-0BE4-4E64-BBD5-72E2BA98741C</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<engineerTo>
+<item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
+</engineerTo>
+<referedAttribute>DB565AF3-613D-EAF4-E3EB-609DD34FB56A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_humor" id="FA2F34C9-1A96-2682-32EA-5E9AE9604579">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 14:05:38 UTC</createdTime>
+<generatorID>B365FA56-F303-DD83-7B94-8B62E35C8EBA</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<engineerTo>
+<item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
+</engineerTo>
+<referedAttribute>B0E12533-6013-A6E0-A2D2-96B5D1D362FA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_recomendacao" id="487F6049-710F-9E38-BA40-542E6C68AEF3">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:37:46 UTC</createdTime>
+<generatorID>89FB8FE6-A48A-B3C8-CF23-6AEE0E96C722</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<engineerTo>
+<item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
+</engineerTo>
+<referedAttribute>D4273760-7DA3-3F4E-DDF8-204CB1A55FE2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_retorno" id="BE0E47AD-EC3F-0DF0-3714-2B17334B615F">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:38:29 UTC</createdTime>
+<generatorID>F7A937E1-CB69-436D-7849-F753A1144E3E</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<engineerTo>
+<item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
+</engineerTo>
+<referedAttribute>C8E3AC00-C2EC-1702-C40C-67035F8E102E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_emprego" id="4C880C2F-9DAA-5825-DDB5-901D160BC4EE">
+<createdBy>leonardo.santos</createdBy>
+<createdTime>2025-11-17 20:39:24 UTC</createdTime>
+<generatorID>9385D3E5-FE61-4FD9-CDFB-FAA5F9FC2C2D</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<engineerTo>
+<item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
+</engineerTo>
+<referedAttribute>B5AF10A4-3622-21DA-6924-66461E04EBCF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C4D1983E-C5CC-8EF9-E556-548230D9B8A4" name="TB_LST_USUARIO PK">
@@ -130,6 +200,8 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>BF44ED58-BB05-6D3D-4614-FEBF22A7B521</attributeRef>
+<attributeRef>487F6049-710F-9E38-BA40-542E6C68AEF3</attributeRef>
+<attributeRef>4C880C2F-9DAA-5825-DDB5-901D160BC4EE</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
