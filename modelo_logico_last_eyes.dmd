@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo_logico_last_eyes" id="89A0877D-CCFE-8D97-68C9-577837BF074F" version="3.5">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-17 03:05:36 UTC</createdTime>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>89A0877D-CCFE-8D97-68C9-577837BF074F</designId>
+</OSDM_Design>
