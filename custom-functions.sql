@@ -1,3 +1,9 @@
+--   GRUPO: Mont Clio
+--   NOME PROJETO: The Last Eyes
+--   TURMA: 2TDSPX
+--   Integrantes e RM :     Leonardo Santos | 557541 
+--                          Pedro Santos | 558243 
+--                          Vitor Martins | 558244 
 
 --DEFINIÇÃO: FUNÇÃO 1 - fn_gerar_json_usuario
 CREATE OR REPLACE FUNCTION fn_gerar_json_usuario (
@@ -139,3 +145,179 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE(v_json);
 END;
 /
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+--DEFINIÇÃO: FUNÇÃO 2 - fn_calc_compatibilidade
+CREATE OR REPLACE FUNCTION fn_calc_compatibilidade (
+    p_id_usuario IN NUMBER,
+    p_id_emprego IN NUMBER
+) RETURN CLOB
+IS
+    v_json CLOB := TO_CLOB('');
+    v_email tb_lst_usuario.email_usuario%TYPE;
+    v_cpf_tb tb_lst_usuario.cpf%TYPE;
+    v_telefone VARCHAR2(50);
+    v_id_perfil NUMBER;
+    v_user_cargo tb_lst_emprego.cargo%TYPE;
+    v_user_modelo tb_lst_emprego.modelo_trabalho%TYPE;
+    v_target_cargo tb_lst_emprego.cargo%TYPE;
+    v_target_modelo tb_lst_emprego.modelo_trabalho%TYPE;
+    v_target_empresa_id NUMBER;
+    v_target_empresa_email tb_lst_empresa.email%TYPE;
+
+    v_perfil_score    NUMBER := 0;
+    v_cargo_score     NUMBER := 0;
+    v_competencias_score NUMBER := 0;
+    v_matches NUMBER := 0;
+    v_total_tokens NUMBER := 0;
+    v_token VARCHAR2(200);
+    v_occ NUMBER := 1;
+    v_compat_percent NUMBER := 0;
+
+    ex_validacao_falhou EXCEPTION;
+    ex_calculo_erro EXCEPTION;
+
+BEGIN
+    SELECT u.email_usuario,
+           u.cpf,
+           TO_CHAR(u.telefone),
+           u.id_perfil,
+           ue.cargo,
+           ue.modelo_trabalho,
+           ue.id_empresa
+      INTO v_email,
+           v_cpf_tb,
+           v_telefone,
+           v_id_perfil,
+           v_user_cargo,
+           v_user_modelo,
+           v_target_empresa_id
+      FROM tb_lst_usuario u
+      LEFT JOIN tb_lst_emprego ue ON u.id_emprego = ue.id_emprego
+     WHERE u.id_usuario = p_id_usuario;
+
+    SELECT te.cargo,
+           te.modelo_trabalho,
+           te.id_empresa
+      INTO v_target_cargo,
+           v_target_modelo,
+           v_target_empresa_id
+      FROM tb_lst_emprego te
+     WHERE te.id_emprego = p_id_emprego;
+
+    SELECT email
+      INTO v_target_empresa_email
+      FROM tb_lst_empresa
+     WHERE id_empresa = v_target_empresa_id;
+
+    IF v_email IS NULL OR v_cpf_tb IS NULL OR v_telefone IS NULL THEN
+        DBMS_OUTPUT.PUT_LINE('ERRO: dados essenciais ausentes para usuario_id=' || p_id_usuario);
+        RAISE ex_validacao_falhou;
+    END IF;
+
+    IF NOT REGEXP_LIKE(v_cpf_tb, '^(\d{3}\.\d{3}\.\d{3}\-\d{2}|\d{11})$') THEN
+        DBMS_OUTPUT.PUT_LINE('ERRO: CPF com formato inválido para usuario_id=' || p_id_usuario || ' valor=' || v_cpf_tb);
+        RAISE ex_validacao_falhou;
+    END IF;
+
+    IF NOT REGEXP_LIKE(v_email, '^[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$') THEN
+        DBMS_OUTPUT.PUT_LINE('ERRO: Email com formato inválido para usuario_id=' || p_id_usuario || ' valor=' || v_email);
+        RAISE ex_validacao_falhou;
+    END IF;
+
+    IF NOT REGEXP_LIKE(v_telefone, '^\d{10,13}$') THEN
+        DBMS_OUTPUT.PUT_LINE('ERRO: Telefone com formato inválido para usuario_id=' || p_id_usuario || ' valor=' || v_telefone);
+        RAISE ex_validacao_falhou;
+    END IF;
+
+    IF v_id_perfil IS NULL THEN
+        v_perfil_score := 0;
+    ELSE
+        IF v_id_perfil = 2 THEN
+            v_perfil_score := 100;
+        ELSE
+            v_perfil_score := 50;
+        END IF;
+    END IF;
+
+    v_matches := 0;
+    v_total_tokens := 0;
+    v_occ := 1;
+    LOOP
+        v_token := REGEXP_SUBSTR(NVL(v_target_cargo,''), '[^ ]+', 1, v_occ);
+        EXIT WHEN v_token IS NULL;
+        v_total_tokens := v_total_tokens + 1;
+        IF INSTR(LOWER(NVL(v_user_cargo,'')), LOWER(v_token)) > 0 THEN
+            v_matches := v_matches + 1;
+        END IF;
+        v_occ := v_occ + 1;
+    END LOOP;
+
+    IF v_total_tokens = 0 THEN
+        v_cargo_score := 0;
+    ELSE
+        v_cargo_score := ROUND((v_matches / v_total_tokens) * 100);
+    END IF;
+
+    IF NVL(v_user_modelo,'X') = NVL(v_target_modelo,'Y') THEN
+        v_competencias_score := 100;
+    ELSE
+        v_competencias_score := 0;
+    END IF;
+
+    v_competencias_score := ROUND((v_cargo_score + v_competencias_score) / 2);
+
+    v_compat_percent := ROUND((v_perfil_score * 0.4) + (v_cargo_score * 0.3) + (v_competencias_score * 0.3));
+
+    IF v_compat_percent >= 75 THEN
+        v_json := '{"usuario_id":' || p_id_usuario ||
+                  ',"vaga_id":' || p_id_emprego ||
+                  ',"compatibilidade_percent":' || v_compat_percent ||
+                  ',"detalhes":{"perfil_score":' || v_perfil_score ||
+                  ',"cargo_score":' || v_cargo_score ||
+                  ',"competencias_score":' || v_competencias_score || '},' ||
+                  '"mensagem":"Alta compatibilidade"}';
+    ELSIF v_compat_percent >= 50 THEN
+        v_json := '{"usuario_id":' || p_id_usuario ||
+                  ',"vaga_id":' || p_id_emprego ||
+                  ',"compatibilidade_percent":' || v_compat_percent ||
+                  ',"detalhes":{"perfil_score":' || v_perfil_score ||
+                  ',"cargo_score":' || v_cargo_score ||
+                  ',"competencias_score":' || v_competencias_score || '},' ||
+                  '"mensagem":"Compatibilidade média"}';
+    ELSE
+        v_json := '{"usuario_id":' || p_id_usuario ||
+                  ',"vaga_id":' || p_id_emprego ||
+                  ',"compatibilidade_percent":' || v_compat_percent ||
+                  ',"detalhes":{"perfil_score":' || v_perfil_score ||
+                  ',"cargo_score":' || v_cargo_score ||
+                  ',"competencias_score":' || v_competencias_score || '},' ||
+                  '"mensagem":"Baixa compatibilidade"}';
+    END IF;
+
+    RETURN v_json;
+
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        DBMS_OUTPUT.PUT_LINE('ERRO: usuario ou vaga nao encontrados para ids ' || p_id_usuario || ' / ' || p_id_emprego);
+        RETURN NULL;
+    WHEN ex_validacao_falhou THEN
+        DBMS_OUTPUT.PUT_LINE('ERRO: validacao falhou para usuario_id=' || p_id_usuario);
+        RETURN NULL;
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('ERRO desconhecido durante calculo para usuario_id=' || p_id_usuario || ' vaga_id=' || p_id_emprego || ' - ' || SQLERRM);
+        RETURN NULL;
+END fn_calc_compatibilidade;
+/
+
+
+--CHAMADA FUNÇÃO: fn_calc_compatibilidade
+SET SERVEROUTPUT ON;
+DECLARE
+    v_out CLOB;
+BEGIN
+    v_out := fn_calc_compatibilidade(1, 1);
+    DBMS_OUTPUT.PUT_LINE(v_out);
+END;
+/
+
