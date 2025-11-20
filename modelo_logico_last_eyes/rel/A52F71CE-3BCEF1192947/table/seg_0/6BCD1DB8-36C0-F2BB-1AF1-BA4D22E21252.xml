@@ -84,7 +84,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="895FE177-691C-277E-C4DF-E3FCB6979EBB" name="id_recomendacao_pk">
+<ind_PK_UK id="895FE177-691C-277E-C4DF-E3FCB6979EBB" name="tb_lst_rec_id_recomendacao_pk">
 <createdBy>leonardo.santos</createdBy>
 <createdTime>2025-11-17 20:40:00 UTC</createdTime>
 <generatorID>AC5CAEFC-B27A-8820-8EF6-AFDDA35B53FE</generatorID>

@@ -95,11 +95,23 @@
 <colAssociation fkAssociation="0F88DF2E-0703-2C57-19F7-4BF04A46C732" referredColumn="738B236A-9C2B-95C1-3BB6-4AE47089FD69"/>
 </associations>
 </Column>
+<Column name="id_empresa" id="7DCCD8D3-F51C-1DF8-8AE0-460673B72A7B">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:03:54 UTC</createdTime>
+<generatorID>B7F13B05-A642-12F2-5108-447BFFC86CD1</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="nome_usuario" id="68D82D73-BC1E-EDD9-EC38-CEDCA06476FF">
 <createdBy>leonardo.santos</createdBy>
 <createdTime>2025-11-17 20:40:00 UTC</createdTime>
 <generatorID>62B74068-7292-A3B6-57E7-65369BF4CB0E</generatorID>
 <ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -180,7 +192,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="1AD060A4-3694-3054-2D36-EB3412C36A3B" name="id_usuario_pk">
+<ind_PK_UK id="1AD060A4-3694-3054-2D36-EB3412C36A3B" name="tb_lst_us_id_usuario_pk">
 <createdBy>leonardo.santos</createdBy>
 <createdTime>2025-11-17 20:40:00 UTC</createdTime>
 <generatorID>C4D1983E-C5CC-8EF9-E556-548230D9B8A4</generatorID>
@@ -192,7 +204,7 @@
 <colUsage columnID="2065F450-7AB0-6A0B-6FA6-686DD7286821"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2781E2E9-2EF9-9438-2748-4E3543E8BCA0" name="id_emprego_fk">
+<ind_PK_UK id="2781E2E9-2EF9-9438-2748-4E3543E8BCA0" name="tb_lst_emp_id_emprego_fk">
 <createdBy>leonardo.santos</createdBy>
 <createdTime>2025-11-17 20:40:00 UTC</createdTime>
 <generatorID>9385D3E5-FE61-4FD9-CDFB-FAA5F9FC2C2D</generatorID>
@@ -203,7 +215,7 @@
 <colUsage columnID="7DEF3BD9-4E41-1A6B-1D60-C6059C05A9A1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8B6A2252-FB96-EF95-22EA-C411485F7234" name="id_humor_fk">
+<ind_PK_UK id="8B6A2252-FB96-EF95-22EA-C411485F7234" name="tb_lst_humor_id_humor_fk">
 <createdBy>leonardo.santos</createdBy>
 <createdTime>2025-11-17 20:40:00 UTC</createdTime>
 <generatorID>B365FA56-F303-DD83-7B94-8B62E35C8EBA</generatorID>
@@ -214,7 +226,7 @@
 <colUsage columnID="70D71F74-43ED-13E3-9333-09F5E96548C5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="92125D43-59A1-C3CA-F01E-3EA96E64B0E4" name="id_perfil_fk">
+<ind_PK_UK id="92125D43-59A1-C3CA-F01E-3EA96E64B0E4" name="tb_lst_perfil_id_perfil_fk">
 <createdBy>leonardo.santos</createdBy>
 <createdTime>2025-11-17 20:40:00 UTC</createdTime>
 <generatorID>082C1CF2-0BE4-4E64-BBD5-72E2BA98741C</generatorID>
@@ -225,7 +237,7 @@
 <colUsage columnID="95006274-B0E5-85E4-DC39-68FF8955F79D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1E651F2A-5878-A802-59DC-E6E6FA5C83C6" name="id_recomendacao_fk">
+<ind_PK_UK id="1E651F2A-5878-A802-59DC-E6E6FA5C83C6" name="tb_lst_rec_id_recomendacao_fk">
 <createdBy>leonardo.santos</createdBy>
 <createdTime>2025-11-17 20:40:00 UTC</createdTime>
 <generatorID>89FB8FE6-A48A-B3C8-CF23-6AEE0E96C722</generatorID>
@@ -236,7 +248,7 @@
 <colUsage columnID="8368F51F-CF27-AA4C-EA40-B457F48E3B06"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BABC64CB-27A5-0F64-02D6-D7879230A3CD" name="id_retorno_fk">
+<ind_PK_UK id="BABC64CB-27A5-0F64-02D6-D7879230A3CD" name="tb_lst_std_ret_id_retorno_fk">
 <createdBy>leonardo.santos</createdBy>
 <createdTime>2025-11-17 20:40:00 UTC</createdTime>
 <generatorID>F7A937E1-CB69-436D-7849-F753A1144E3E</generatorID>

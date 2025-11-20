@@ -188,6 +188,20 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_empresa" id="B7F13B05-A642-12F2-5108-447BFFC86CD1">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:02:46 UTC</createdTime>
+<generatorID>9385D3E5-FE61-4FD9-CDFB-FAA5F9FC2C2D</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<engineerTo>
+<item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
+</engineerTo>
+<referedAttribute>40A0BF6B-2406-F9C3-A3C5-2042AA54F8F8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C4D1983E-C5CC-8EF9-E556-548230D9B8A4" name="TB_LST_USUARIO PK">
@@ -202,6 +216,7 @@
 <attributeRef>BF44ED58-BB05-6D3D-4614-FEBF22A7B521</attributeRef>
 <attributeRef>487F6049-710F-9E38-BA40-542E6C68AEF3</attributeRef>
 <attributeRef>4C880C2F-9DAA-5825-DDB5-901D160BC4EE</attributeRef>
+<attributeRef>B7F13B05-A642-12F2-5108-447BFFC86CD1</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

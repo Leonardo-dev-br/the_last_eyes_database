@@ -70,7 +70,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="2B74D980-70E0-225C-8820-E451D072E6F6" name="id_humor_pk">
+<ind_PK_UK id="2B74D980-70E0-225C-8820-E451D072E6F6" name="tb_lst_humor_id_humor_pk">
 <createdBy>leonardo.santos</createdBy>
 <createdTime>2025-11-17 20:40:00 UTC</createdTime>
 <generatorID>8581336E-2E53-B7AA-D20D-ED05D7F917AB</generatorID>

@@ -20,6 +20,21 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="id_empresa" id="A07DFCCD-A7F1-F203-02AA-F45DDD6E31A8">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:03:54 UTC</createdTime>
+<generatorID>40A0BF6B-2406-F9C3-A3C5-2042AA54F8F8</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="042BBC22-33DC-193C-ADC9-1315D806FE60" referredColumn="D478AFE9-A34A-E4E6-A225-16D66978698E"/>
+</associations>
+</Column>
 <Column name="empresa" id="7ACA5E6A-8E29-FC1C-BDF2-DC5CB8F1DCB5">
 <createdBy>leonardo.santos</createdBy>
 <createdTime>2025-11-17 20:40:00 UTC</createdTime>
@@ -103,7 +118,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="5F7170FE-B4B1-7DB8-2B27-30B0F8505216" name="id_emprego_pk">
+<ind_PK_UK id="5F7170FE-B4B1-7DB8-2B27-30B0F8505216" name="tb_lst_empr_id_emprego_pk">
 <createdBy>leonardo.santos</createdBy>
 <createdTime>2025-11-17 20:40:00 UTC</createdTime>
 <generatorID>AB9BC980-DE0E-F6E5-5B04-46B912C2E9CE</generatorID>
@@ -113,6 +128,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="738B236A-9C2B-95C1-3BB6-4AE47089FD69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F21F46E1-086B-3C0D-22F7-A4DEF272FDA0" name="tb_lst_emp_id_empresa_fk">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:03:54 UTC</createdTime>
+<generatorID>E10633B4-EB0F-EBAB-D02E-4C28AEB20D28</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A07DFCCD-A7F1-F203-02AA-F45DDD6E31A8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

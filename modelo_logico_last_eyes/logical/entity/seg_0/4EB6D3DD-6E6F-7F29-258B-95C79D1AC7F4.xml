@@ -115,6 +115,20 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_empresa" id="40A0BF6B-2406-F9C3-A3C5-2042AA54F8F8">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:02:46 UTC</createdTime>
+<generatorID>E10633B4-EB0F-EBAB-D02E-4C28AEB20D28</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<engineerTo>
+<item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
+</engineerTo>
+<referedAttribute>E5D510E3-94D4-D217-4E7A-4B05B4C69131</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="AB9BC980-DE0E-F6E5-5B04-46B912C2E9CE" name="TB_LST_EMPREGO PK">
@@ -127,6 +141,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>B5AF10A4-3622-21DA-6924-66461E04EBCF</attributeRef>
+<attributeRef>40A0BF6B-2406-F9C3-A3C5-2042AA54F8F8</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

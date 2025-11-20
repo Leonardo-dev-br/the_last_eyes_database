@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="id_empresa_emprego_fk" directorySegmentName="seg_0" id="E10633B4-EB0F-EBAB-D02E-4C28AEB20D28">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:02:46 UTC</createdTime>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<engineerTo>
+<item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
+</engineerTo>
+<sourcePk>EABAC98E-CC18-4FA9-F490-4E09D2FDCC7E</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F1557AAE-6553-DCEE-D1E8-2A8C9CE7403C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4EB6D3DD-6E6F-7F29-258B-95C79D1AC7F4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

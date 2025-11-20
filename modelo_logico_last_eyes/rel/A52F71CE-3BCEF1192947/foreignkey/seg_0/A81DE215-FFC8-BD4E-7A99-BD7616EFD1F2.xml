@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A81DE215-FFC8-BD4E-7A99-BD7616EFD1F2" containerWithKeyObject="C0797B50-07CD-5D0B-B4BB-CCD235B4DF0F" localFKIndex="BABC64CB-27A5-0F64-02D6-D7879230A3CD" name="id_retorno_fk">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A81DE215-FFC8-BD4E-7A99-BD7616EFD1F2" containerWithKeyObject="C0797B50-07CD-5D0B-B4BB-CCD235B4DF0F" localFKIndex="BABC64CB-27A5-0F64-02D6-D7879230A3CD" name="tb_lst_std_ret_id_retorno_fk">
 <createdBy>leonardo.santos</createdBy>
 <createdTime>2025-11-17 20:40:00 UTC</createdTime>
 <generatorID>F7A937E1-CB69-436D-7849-F753A1144E3E</generatorID>

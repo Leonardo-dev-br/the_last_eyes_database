@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18F8173B-3691-9F62-1246-99C53C12D218" name="TB_LST_EMPRESA">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:03:54 UTC</createdTime>
+<generatorID>F1557AAE-6553-DCEE-D1E8-2A8C9CE7403C</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_empresa" id="D478AFE9-A34A-E4E6-A225-16D66978698E">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:03:54 UTC</createdTime>
+<generatorID>E5D510E3-94D4-D217-4E7A-4B05B4C69131</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cnpj" id="B93FC5DD-4F50-2BE6-CE05-EFDA9E17AA1D">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:03:54 UTC</createdTime>
+<generatorID>873C946D-0D4D-3B68-3CA1-0354E9A9B0DA</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_fantasia" id="2123B698-CD1E-18A0-868A-09C15077CC99">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:03:54 UTC</createdTime>
+<generatorID>CD6939B6-49C0-33A6-F667-5CF917B814B0</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="razao_social" id="759F1595-AF11-E6F6-32AC-D07A57D897AB">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:03:54 UTC</createdTime>
+<generatorID>13BFB70E-75E1-92B3-5FB6-C59C630FAE31</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone" id="B2575DC5-EBF0-B259-4DD7-6169E6F63348">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:03:54 UTC</createdTime>
+<generatorID>09B77412-E2BF-5A79-07C0-1E29442B112F</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="4091E97F-D3D3-6A18-DA2A-993472673A3B">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:03:54 UTC</createdTime>
+<generatorID>DE8B598B-37C3-8A6D-C3DC-AEF0D0FCFC97</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A3E48BE-945B-8FD9-6DFA-957F3823B6D6" name="tb_lst_emp_id_empresa_pk">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:03:54 UTC</createdTime>
+<generatorID>EABAC98E-CC18-4FA9-F490-4E09D2FDCC7E</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D478AFE9-A34A-E4E6-A225-16D66978698E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

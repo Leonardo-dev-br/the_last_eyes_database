@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="042BBC22-33DC-193C-ADC9-1315D806FE60" containerWithKeyObject="C39C9DD3-633A-6341-06AF-D7B9FA9FD3F6" localFKIndex="F21F46E1-086B-3C0D-22F7-A4DEF272FDA0" name="tb_lst_emp_id_empresa_fk">
+<createdBy>leona</createdBy>
+<createdTime>2025-11-20 12:03:54 UTC</createdTime>
+<generatorID>E10633B4-EB0F-EBAB-D02E-4C28AEB20D28</generatorID>
+<ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
+<referredTableLongName>TB_LST_EMPRESA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>18F8173B-3691-9F62-1246-99C53C12D218</referredTableID>
+<keyObject>5A3E48BE-945B-8FD9-6DFA-957F3823B6D6</keyObject>
+<referredKeyID>5A3E48BE-945B-8FD9-6DFA-957F3823B6D6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_empresa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -69,7 +69,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="53FBA487-0333-0E75-5A1C-0FF458F467F3" name="id_retorno_pk">
+<ind_PK_UK id="53FBA487-0333-0E75-5A1C-0FF458F467F3" name="tb_lst_std_ret_id_retorno_pk">
 <createdBy>leonardo.santos</createdBy>
 <createdTime>2025-11-17 20:40:00 UTC</createdTime>
 <generatorID>465D1831-3E39-C061-4AA9-C572B89AD200</generatorID>
