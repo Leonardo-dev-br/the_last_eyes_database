@@ -42,7 +42,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="F6E54648-C949-90D3-1A7E-E71DDB0DD142" name="TB_LST_PERFIL PK">
+<identifier id="F6E54648-C949-90D3-1A7E-E71DDB0DD142" name="tb_lst_perfil_id_perfil_pk">
 <createdBy>leona</createdBy>
 <createdTime>2025-11-17 03:16:47 UTC</createdTime>
 <ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
@@ -50,6 +50,7 @@
 <item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>DB565AF3-613D-EAF4-E3EB-609DD34FB56A</newElementsIDs>
 <usedAttributes>
 <attributeRef>DB565AF3-613D-EAF4-E3EB-609DD34FB56A</attributeRef>
 </usedAttributes>

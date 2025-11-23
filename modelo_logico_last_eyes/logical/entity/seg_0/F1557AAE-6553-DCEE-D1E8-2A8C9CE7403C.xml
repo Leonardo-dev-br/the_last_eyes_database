@@ -92,7 +92,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="EABAC98E-CC18-4FA9-F490-4E09D2FDCC7E" name="TB_LST_EMPRESA PK">
+<identifier id="EABAC98E-CC18-4FA9-F490-4E09D2FDCC7E" name="tb_lst_emp_id_empresa_pk">
 <createdBy>leona</createdBy>
 <createdTime>2025-11-20 11:55:06 UTC</createdTime>
 <ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
@@ -100,6 +100,7 @@
 <item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>E5D510E3-94D4-D217-4E7A-4B05B4C69131</newElementsIDs>
 <usedAttributes>
 <attributeRef>E5D510E3-94D4-D217-4E7A-4B05B4C69131</attributeRef>
 </usedAttributes>

@@ -96,7 +96,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="AC5CAEFC-B27A-8820-8EF6-AFDDA35B53FE" name="TB_LST_RECOMENDACAO PK">
+<identifier id="AC5CAEFC-B27A-8820-8EF6-AFDDA35B53FE" name="tb_lst_rec_id_recomendacao_pk">
 <createdBy>leona</createdBy>
 <createdTime>2025-11-17 03:28:16 UTC</createdTime>
 <ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
@@ -104,6 +104,7 @@
 <item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>D4273760-7DA3-3F4E-DDF8-204CB1A55FE2</newElementsIDs>
 <usedAttributes>
 <attributeRef>D4273760-7DA3-3F4E-DDF8-204CB1A55FE2</attributeRef>
 </usedAttributes>

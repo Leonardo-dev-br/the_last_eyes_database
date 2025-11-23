@@ -81,7 +81,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="8581336E-2E53-B7AA-D20D-ED05D7F917AB" name="TB_LST_HUMOR PK">
+<identifier id="8581336E-2E53-B7AA-D20D-ED05D7F917AB" name="tb_lst_humor_id_humor_pk">
 <createdBy>leona</createdBy>
 <createdTime>2025-11-17 03:24:47 UTC</createdTime>
 <ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
@@ -89,6 +89,7 @@
 <item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>B0E12533-6013-A6E0-A2D2-96B5D1D362FA</newElementsIDs>
 <usedAttributes>
 <attributeRef>B0E12533-6013-A6E0-A2D2-96B5D1D362FA</attributeRef>
 </usedAttributes>

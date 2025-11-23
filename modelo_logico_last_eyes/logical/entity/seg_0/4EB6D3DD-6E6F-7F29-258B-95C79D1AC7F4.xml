@@ -131,7 +131,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="AB9BC980-DE0E-F6E5-5B04-46B912C2E9CE" name="TB_LST_EMPREGO PK">
+<identifier id="AB9BC980-DE0E-F6E5-5B04-46B912C2E9CE" name="tb_lst_empr_id_emprego_pk">
 <createdBy>leona</createdBy>
 <createdTime>2025-11-17 03:38:20 UTC</createdTime>
 <ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
@@ -139,9 +139,9 @@
 <item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>B5AF10A4-3622-21DA-6924-66461E04EBCF</newElementsIDs>
 <usedAttributes>
 <attributeRef>B5AF10A4-3622-21DA-6924-66461E04EBCF</attributeRef>
-<attributeRef>40A0BF6B-2406-F9C3-A3C5-2042AA54F8F8</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

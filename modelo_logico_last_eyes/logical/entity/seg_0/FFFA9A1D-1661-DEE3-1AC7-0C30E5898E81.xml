@@ -80,7 +80,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="465D1831-3E39-C061-4AA9-C572B89AD200" name="TB_LST_ESTADO_RETORNO PK">
+<identifier id="465D1831-3E39-C061-4AA9-C572B89AD200" name="tb_lst_std_ret_id_retorno_pk">
 <createdBy>leona</createdBy>
 <createdTime>2025-11-17 03:35:03 UTC</createdTime>
 <ownerDesignName>modelo_logico_last_eyes</ownerDesignName>
@@ -88,6 +88,7 @@
 <item key="A52F71CE-CD2E-5219-B623-3BCEF1192947" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>C8E3AC00-C2EC-1702-C40C-67035F8E102E</newElementsIDs>
 <usedAttributes>
 <attributeRef>C8E3AC00-C2EC-1702-C40C-67035F8E102E</attributeRef>
 </usedAttributes>
